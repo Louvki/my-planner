@@ -1,21 +1,18 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './components/Home';
-import AreaList from './components/AreaList';
-import AreaDetails from './components/AreaDetails';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './components/layout/Navbar'
+import Dashboard from './components/dashboard/Dashboard'
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/areas" exact component={AreaList} />
-          <Route path="/areas/:id" component={AreaDetails} />
+          <Route exact path='/' component={Dashboard} />
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
