@@ -17,7 +17,7 @@ const ProjectDetails = (props) => {
           </div>
           <div className="card-action grey lighten-4 grey-text">
             <div>Posted by the {props.project.authorFirstName + ' ' + props.project.authorLastName}</div>
-            <div>{props.project.created}</div>
+            <div>{props.project.createdAt.toDate().toDateString()}</div>
           </div>
         </div>
       </div>
