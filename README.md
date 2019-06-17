@@ -1,7 +1,6 @@
 A React, Redux & Firebase App created for learning purposes.
 
-To start the application run 
-``` npm start ```
+To start the application run ``` npm install ``` and then``` npm start ```
 
   Allows the registration of users using email and firebase auth. 
   Registered users can create projects.
