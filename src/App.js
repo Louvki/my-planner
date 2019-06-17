@@ -19,6 +19,8 @@ function App() {
           <Route path='/signin' component={SignIn} />
           <Route path='/signup' component={SignUp} />
           <Route path='/create' component={CreateProject} />
+          {/* Catch All */}
+          <Route path='/' component={Dashboard} />
         </Switch>
       </div>
     </BrowserRouter>

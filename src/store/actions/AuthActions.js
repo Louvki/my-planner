@@ -31,7 +31,6 @@ export const signUp = (newUser) => {
         const firebase = getFirebase();
         const firestore = getFirestore();
 
-        console.log(newUser);
         firebase.auth().createUserWithEmailAndPassword(
             newUser.email,
             newUser.password
